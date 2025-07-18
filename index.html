@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de Aniversario</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <audio id="bg-music" loop autoplay>
+    <source src="music/La Forma En Que Me Miras - Super Yei x Myke Towers x Sammy x Lenny Tavarez x Rafa Pabon x Jone Quest.mp3" type="audio/mpeg">
+  </audio>
+
+  <h1>Feliz Aniversario, Amor</h1>
+
+  <div class="message">
+    Cada día a tu lado es un regalo: tu risa ilumina mis mañanas, tu abrazo calma mis miedos y tu cariño hace latir más fuerte mi corazón. Gracias por ser mi cómplice, mi refugio y mi inspiración constante. Te amo hoy y siempre.
+  </div>
+  <div class="typewriter">
+  <p>Mi amor, cada momento contigo es un regalo que la vida me dio...</p>
+</div>
+
+  <section class="gallery">
+    <img src="ruta/a/foto1.jpg" alt="Foto 1" />
+    <img src="ruta/a/foto2.jpg" alt="Foto 2" />
+    <img src="ruta/a/foto3.jpg" alt="Foto 3" />
+    <img src="ruta/a/foto4.jpg" alt="Foto 4" />
+  </section>
+
+  <div class="letter-container">
+    <div class="envelope" onclick="openLetter()">
+      <div class="letter">
+        <p>Mi amor: abrí esto para leer algo especial...</p>
+        <p class="hidden-message">Gracias por tanto. Eres lo mejor que me ha pasado en la vida. 💌</p>
+      </div>
+    </div>
+  </div>
+
+ <svg id="flower" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#c77dff" opacity="0.6"> <!-- pétalos lilas -->
+    <circle cx="100" cy="60" r="30"/>
+    <circle cx="60" cy="100" r="30"/>
+    <circle cx="140" cy="100" r="30"/>
+    <circle cx="100" cy="140" r="30"/>
+    <circle cx="100" cy="100" r="25" fill="#9d4edd"/> <!-- centro púrpura -->
+  </g>
+</svg>
+
+  <canvas id="stars"></canvas>
+  <div id="floating-flowers-container"></div>
+  <div id="contador-dias" class="contador"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
