@@ -78,47 +78,64 @@ h1 {
   pointer-events: none;
 }
 
+/* Estilo para la carta y el texto */
 .letter-container {
   display: flex;
   justify-content: center;
-  margin: 4rem auto;
+  margin: 3rem 0 2rem 0;
 }
 
 .envelope {
-  background: rgba(40, 0, 60, 0.92);
-  border: 2px solid #9d4edd;
-  padding: 28px 32px;
-  border-radius: 18px;
-  cursor: pointer;
-  max-width: 420px;
-  box-shadow: 0 0 30px #7b2cbf88, 0 0 60px #9d4edd44;
+  background: rgba(40, 0, 60, 0.96);
+  border: 2.5px solid #a259e6;
+  border-radius: 22px;
+  box-shadow: 0 0 40px #7b2cbf55, 0 0 80px #9d4edd33;
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 520px;
   transition: transform 0.3s, box-shadow 0.3s;
-  margin: 0 auto;
+  cursor: pointer;
 }
 
 .envelope:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 50px #a259e6, 0 0 80px #9d4edd;
+  transform: scale(1.03) rotate(-1deg);
+  box-shadow: 0 0 60px #a259e6, 0 0 100px #9d4edd;
 }
 
 .letter p {
-  font-size: 1.15rem;
-  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.45rem;
+  color: #ffe0fb;
+  text-align: left;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  margin: 0.7rem 0;
+  text-shadow: 0 2px 8px #7b2cbf55, 0 0 1px #fff;
+  transition: color 0.3s;
+}
+
+.letter p:first-child {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
   color: #e0b3ff;
-  margin: 0.5rem 0;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  text-shadow: none;
 }
 
 .hidden-message {
   display: none;
   margin-top: 18px;
-  color: #ffb3fa;
-  font-weight: bold;
-  font-size: 1.2rem;
-  background: rgba(157, 78, 221, 0.15);
-  border-radius: 12px;
-  padding: 12px 18px;
+  color: #ffe0fb;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.45rem;
+  font-weight: 400;
+  background: rgba(157, 78, 221, 0.13);
+  border-radius: 14px;
+  padding: 18px 22px;
   box-shadow: 0 0 20px #9d4edd44;
   animation: fadeIn 1s ease-in-out;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
 }
 
 .letter.open .hidden-message {
